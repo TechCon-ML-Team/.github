@@ -1,0 +1,24 @@
+name: Model Degradation
+description: Accuracy drop, label quality issue, or dataset problem
+labels: ["ml", "quality"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      options:
+        - techcon_passports
+        - techcon_defects_stt_plus
+        - techcon_defectoscopy
+    validations:
+      required: true
+  - type: input
+    id: metric
+    attributes:
+      label: Metric
+      placeholder: "e.g. F1 dropped from 0.87 to 0.71"
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: When did you notice this? Any recent data or label changes?

@@ -1,0 +1,22 @@
+name: Bug Report
+description: Something isn't working
+labels: ["bug"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Affected repo
+      placeholder: "techcon_passports, techcon_defects_stt_plus, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
