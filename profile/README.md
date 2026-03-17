@@ -15,6 +15,10 @@
 Самостоятельный отдел разработки в TechCon. Занимаемся полным циклом —
 от исследований до промышленного запуска, включая сопровождение и инфраструктуру.
 
+<br/>
+
+![Activity Graph](https://techcon-activity-graph.vercel.app/graph?custom_title=TechCon-ML-Team&bg_color=0d1117&color=8E8699&line=4A4453&point=F1F5F2&area=true&hide_border=true)
+
 ---
 
 <h2 align="center">Сервисы</h2>
