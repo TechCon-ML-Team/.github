@@ -8,62 +8,62 @@
 
 </div>
 
-<img src="assets/divider.svg" width="100%"/>
+---
 
-## О команде
+<h2 align="center">О команде</h2>
 
 Самостоятельный отдел разработки в TechCon. Занимаемся полным циклом —
 от исследований до промышленного запуска, включая сопровождение и инфраструктуру.
 
-<img src="assets/divider.svg" width="100%"/>
+---
 
-## Сервисы
+<h2 align="center">Сервисы</h2>
 
 <table>
   <tr>
     <td><b>techcon_passports</b></td>
     <td>Распознавание паспортов: PDF/фото → структурированные данные</td>
-    <td><img src="https://img.shields.io/badge/production-готов-4A4453?style=flat-square&labelColor=4A4453&color=2d6a4f"/></td>
+    <td><img src="https://img.shields.io/badge/status-production-2d6a4f?style=flat-square&labelColor=4A4453"/></td>
   </tr>
   <tr>
     <td><b>techcon_defects_stt_plus</b></td>
     <td>Голосовые записи дефектов → классификация по таксономии SP-547</td>
-    <td><img src="https://img.shields.io/badge/phase-R6-4A4453?style=flat-square&labelColor=4A4453&color=6b4226"/></td>
+    <td><img src="https://img.shields.io/badge/status-phase_R6-6b4226?style=flat-square&labelColor=4A4453"/></td>
   </tr>
   <tr>
     <td><b>techcon_defectoscopy</b></td>
     <td>Визуальная дефектоскопия на нейросетевых признаках (DINOv3)</td>
-    <td><img src="https://img.shields.io/badge/phase-1_завершён-4A4453?style=flat-square&labelColor=4A4453&color=6b4226"/></td>
+    <td><img src="https://img.shields.io/badge/status-phase_1-6b4226?style=flat-square&labelColor=4A4453"/></td>
   </tr>
   <tr>
     <td><b>techcon_techplans_search</b></td>
     <td>Поиск технических планов по атрибутам</td>
-    <td><img src="https://img.shields.io/badge/feature-complete-4A4453?style=flat-square&labelColor=4A4453&color=1b4332"/></td>
+    <td><img src="https://img.shields.io/badge/status-stable-1a5276?style=flat-square&labelColor=4A4453"/></td>
   </tr>
   <tr>
     <td><b>techcon_demos</b></td>
     <td>Демонстрационные стенды всех продуктов</td>
-    <td><img src="https://img.shields.io/badge/production-готов-4A4453?style=flat-square&labelColor=4A4453&color=2d6a4f"/></td>
+    <td><img src="https://img.shields.io/badge/status-production-2d6a4f?style=flat-square&labelColor=4A4453"/></td>
   </tr>
 </table>
 
-<img src="assets/divider.svg" width="100%"/>
+---
 
-## Инфраструктура
+<h2 align="center">Инфраструктура</h2>
 
 Облачная платформа на базе Yandex Cloud:
 
-- **Узел-контроллер** — 4 ЦП / 16 ГБ ОЗУ / 512 ГБ SSD, всегда активен
-- **GPU-воркеры** — A100 80 ГБ (28 ЦП / 119 ГБ) и V100 32 ГБ (8 ЦП / 96 ГБ) — запускаются по требованию, автоматически останавливаются после 4 часов простоя
-- **CPU-воркеры** — 4 ЦП / 16 ГБ, типовые конфигурации для задач без ускорителей
-- **Хранилище** — объектное хранилище YC (наборы данных, веса моделей)
+- **Контроллер-нод** — постоянно активен, обслуживает все сервисы
+- **GPU-воркеры** — A100 и V100, запускаются по требованию, автоматически останавливаются после простоя
+- **CPU-воркеры** — задачи без GPU-ускорения
+- **Объектное хранилище** — датасеты и веса моделей
 
-Парк узлов описан декларативно через Terraform; образы собираются через Packer.
+Инфраструктура описана декларативно через Terraform, образы — через Packer.
 Наблюдаемость: VictoriaMetrics + Grafana + Loki + Alertmanager.
 
-<img src="assets/divider.svg" width="100%"/>
+---
 
-## Принципы разработки
+<h2 align="center">Принципы разработки</h2>
 
 **Единая экосистема** — компоненты спроектированы как части платформы цифрового обследования.
 Каждый сервис знает своё место и интерфейс взаимодействия.
@@ -71,8 +71,8 @@
 **Единые стандарты** — общий каркас, единое CI, конвенции оформления кода.
 Новый сервис встраивается в инфраструктуру за часы, не недели.
 
-**Готовность к продакшну с первого дня** — наблюдаемость, отслеживание ошибок, проверки
-работоспособности и автоматические тесты закладываются с начала, а не добавляются потом.
+**Наблюдаемость с первого дня** — логи, метрики, отслеживание ошибок и автоматические тесты
+закладываются в сервис с начала разработки, а не добавляются после.
 
 **Переносимость** — минимум привязки к конкретному провайдеру, конфигурация через
 переменные окружения, вся инфраструктура описана кодом. Обновляем компонент — не переписываем систему.
@@ -80,10 +80,11 @@
 **Живая документация** — знания об архитектуре, решениях и стеке хранятся в репозиториях.
 `techcon_hub` автоматически синхронизирует документацию по всей экосистеме.
 
-<img src="assets/divider.svg" width="100%"/>
+---
 
 <div align="center">
+<br/>
 
-[techcon.pro](https://techcon.pro)
+[![techcon.ru](https://img.shields.io/badge/techcon.ru-625B6D?style=for-the-badge)](https://techcon.ru)
 
 </div>
