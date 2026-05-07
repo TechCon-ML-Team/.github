@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=2000&color=8E8699&background=0D111700&center=true&vCenter=true&width=600&lines=ML-инжиниринг+для+промышленной+инспекции;R%26D+%C2%B7+Разработка+%C2%B7+Продакшн+%C2%B7+MLOps;Речь+%C2%B7+Зрение+%C2%B7+Документы+%C2%B7+Инфраструктура)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=2000&color=8E8699&background=0D111700&center=true&vCenter=true&width=760&lines=ML-%D0%B8%D0%BD%D0%B6%D0%B8%D0%BD%D0%B8%D1%80%D0%B8%D0%BD%D0%B3+%D0%B4%D0%BB%D1%8F+%D1%82%D0%B5%D1%85%D0%BE%D0%B1%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9;R%26D+%C2%B7+Production+%C2%B7+MLOps+%C2%B7+Observability;%D0%A0%D0%B5%D1%87%D1%8C+%C2%B7+%D0%97%D1%80%D0%B5%D0%BD%D0%B8%D0%B5+%C2%B7+%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B+%C2%B7+%D0%98%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0)](https://git.io/typing-svg)
 
 <br/>
 
@@ -10,49 +10,22 @@
 
 ---
 
-<h2 align="center">Команда ИИ-разработки TechCon</h2>
+<h2 align="center">TechCon ML Team</h2>
 
-Machine Learning команда внутри [TechCon](https://techcon.ru) — компании, занимающейся цифровым обследованием зданий и сооружений. Мы проектируем, строим и сопровождаем весь технический стек: от исследований и моделей до инфраструктуры и продакшн-деплоя.
+Самостоятельная инженерная команда внутри [TechCon](https://techcon.ru), которая проектирует, разрабатывает и сопровождает прикладные ML-сервисы для технических обследований зданий и инженерной документации.
 
----
-
-<h2 align="center">О компании</h2>
-
-TechCon разрабатывает специализированную платформу для технических обследований зданий. Единственное в России ПО такого класса — автоматизирует сбор, анализ и визуализацию данных по объектам недвижимости.
-
-<br/>
-
-<div align="center">
-
-| | |
-|:---:|:---:|
-| **25+ лет** опыта в обследовании зданий | **150+** клиентов и партнёров |
-| **20 000+** объектов в системе | **в 4 раза** быстрее рыночного стандарта |
-
-</div>
+Мы ведём весь цикл сами: исследования, модели, API, CI/CD, облачную инфраструктуру, мониторинг и эксплуатацию.
 
 ---
 
-<h2 align="center">Что мы разрабатываем</h2>
+<h2 align="center">Что мы делаем</h2>
 
-Собственный стек ML-инструментов и сервисов для платформы цифрового обследования:
-
-**В production**
-- **Распознавание паспортов** — PDF и фото оборудования в структурированные данные (FastAPI + Celery + PostgreSQL)
-- **Поиск технических планов** — атрибутный и семантический поиск по базе объектов (FastAPI + Redis)
-
-**В завершающей стадии разработки**
-- **Классификация дефектов по голосу** — полевые обходы без бумажных бланков (GigaAM-v3 STT + FAISS + классификатор на GPU A100)
-- **Визуальная дефектоскопия** — автоматическое выявление дефектов по фото (DINOv3 ViT-L/16 + KMeans + Rulebook на A100)
-
-**Инфраструктура и платформа**
-- **Автоскейлинг GPU-кластера** — воркеры поднимаются по требованию и выключаются при простое, управляются через Yandex Cloud API
-- **Observability stack** — 24-сервисный мониторинг: Grafana + VictoriaMetrics + Loki + Alertmanager + автономный incident response
-
-**В разработке**
-- **Виджет интеграции** — единая точка подключения AI-сервисов к платформе TechCon через `<script>`-тег
-- **Обучение сотрудников** — RAG-чатбот на базе регламентных документов (FastAPI + pgvector + OpenRouter)
-- **Валидатор отчётов МКД** — автоматическая проверка PDF по ГОСТ 31937-2024 (rule engine, 53 правила)
+- **Распознавание паспортов оборудования** — PDF и фото → структурированные поля
+- **Голосовые сценарии для дефектов** — транскрипция и удобный полевой ввод без бумажных бланков
+- **Визуальная дефектоскопия** — анализ фотографий строительных дефектов
+- **Поиск технических планов** — быстрый поиск по атрибутам и структуре данных
+- **Валидация технических отчётов** — детерминированные проверки и explainable UI
+- **Собственная observability / MLOps-платформа** — мониторинг, алерты, автодеплой, knowledge hub
 
 <br/>
 
@@ -60,39 +33,27 @@ TechCon разрабатывает специализированную плат
 
 ---
 
-<h2 align="center">Как мы работаем</h2>
+<h2 align="center">Публичные showcase-поверхности</h2>
 
 <div align="center">
-Несколько принципов, которые определяют инженерную культуру команды.
+
+[![DEF Showcase](https://img.shields.io/badge/defects--showcase.techcon--ml.ru-4A4453?style=for-the-badge&logo=opencv&logoColor=F1F5F2&labelColor=625B6D)](https://defects-showcase.techcon-ml.ru)
+[![STT Showcase](https://img.shields.io/badge/stt--showcase.techcon--ml.ru-4A4453?style=for-the-badge&logo=googlemessages&logoColor=F1F5F2&labelColor=625B6D)](https://stt-showcase.techcon-ml.ru)
+[![Reports Showcase](https://img.shields.io/badge/reports--showcase.techcon--ml.ru-4A4453?style=for-the-badge&logo=readthedocs&logoColor=F1F5F2&labelColor=625B6D)](https://reports-showcase.techcon-ml.ru)
+
 </div>
 
-<br/>
-
-**От разработки сразу в работу.** Инструменты создаются для реального использования — каждый сервис деплоится, покрыт тестами и мониторится. Прототипы не живут долго: если что-то полезно, оно становится полноценным сервисом.
-
-**Наблюдаемость с первого дня.** Каждый сервис получает `/health`, Gatus healthcheck, Grafana дашборд и alert rules до выхода в production. Мониторинг — часть определения "сделано", а не отдельный этап после.
-
-**Общий API-стандарт.** Все HTTP-сервисы следуют единой методологии: Bearer JWT аутентификация, версионированные URL (`/api/v1/`), стандартный response envelope, машиночитаемые error codes. Решения принимаются один раз и применяются последовательно.
-
-**Безопасность по умолчанию.** GitHub Actions refs закреплены на SHA, `.env` gitignored во всех репозиториях, middleware с allowlist-моделью — доступ открывается явно, а не закрывается постфактум. Секреты только через переменные окружения.
-
-**Инфраструктура как код.** Каждое изменение в облаке проходит через Terraform. Образы VM — через Packer, ротация без downtime. Ручные изменения в облаке не приветствуются — они не воспроизводимы и не ревьюируются.
-
-**Централизованное знание.** Внутренний knowledge hub автоматически отслеживает состояние всех репозиториев: CI-статус, последние изменения, архитектурный дрейф. При каждом push в любой репозиторий — автосинк.
+> Публичные поверхности могут меняться по мере развития экосистемы; актуальная продуктовая картина живёт в репозиториях организации.
 
 ---
 
-<h2 align="center">Демо</h2>
+<h2 align="center">Технологии</h2>
 
-<div align="center">
-
-Попробуйте наши инструменты в работе — три интерактивных стенда:
-
-<br/>
-
-[![Открыть демо](https://img.shields.io/badge/открыть_демо-pyramidheadshark--techcon--demos.ru.tuna.am-4A4453?style=for-the-badge&logo=streamlit&logoColor=F1F5F2&labelColor=625B6D)](https://pyramidheadshark-techcon-demos.ru.tuna.am)
-
-</div>
+- **Backend / APIs:** Python, FastAPI, HTMX, Celery
+- **ML / Data:** PyTorch, multimodal extraction, speech/document/image pipelines
+- **Infra:** Docker, Terraform, Yandex Cloud, Redis, PostgreSQL, Object Storage
+- **Observability:** VictoriaMetrics, Grafana, Loki, Alertmanager, Gatus, GlitchTip
+- **Engineering:** GitHub Actions, self-hosted runners, repo standards, cross-repo knowledge sync
 
 ---
 
