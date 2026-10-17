@@ -40,7 +40,7 @@
 - **Изменения через ветку и проверку.** Каждое изменение проходит обзор кода и автоматические проверки.
 - **По-русски.** Документацию и описания ведём на русском языке, без лишнего жаргона.
 
-Стек: Python, FastAPI, PyTorch, Docker, Terraform, Yandex Cloud, Redis, PostgreSQL, GitHub Actions.
+Стек: Python, FastAPI, PyTorch, Docker, Terraform, Selectel, Redis, PostgreSQL, GitHub Actions.
 
 ## Связаться
 
